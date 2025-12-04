@@ -1,0 +1,71 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* 外层整体布局 */
+.container {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 上方左右布局 */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+/* 每块面板 */
+.panel {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* 下方区域也用 panel */
+.bottom-panel {
+  width: 100%;
+}
+
+/* 输入框样式 */
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box input {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+/* 按钮样式 */
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 用户列表占位元素 */
+.user-list-placeholder {
+  margin-top: 15px;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* 文字和输入框之间的间距 */
+}
+
+/* 可选：固定一下 label 的宽度，让对齐更整齐 */
+.form-row label {
+  width: 80px;
+}
