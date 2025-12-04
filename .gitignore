@@ -1,0 +1,22 @@
+# Node dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor junk
+.DS_Store
+.vscode/
+
+# Env files
+.env
+server/.env
+
+# Build output
+dist/
+client/dist/
