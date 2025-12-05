@@ -22,15 +22,14 @@ export default defineConfig([
       globals: globals.browser,
     },
     rules: {
-      "react/react-in-jsx-scope": "off", // ⭐ fix
+      "react/react-in-jsx-scope": "off",
       "no-unused-vars": ["error", { varsIgnorePattern: "^[A-Z_]" }],
     },
   },
 
-  // --- 测试文件（Vitest + JSX 支持） ---
+  // --- 测试文件（无 Vitest 插件版） ---
   {
     files: ["src/test/**/*.{js,jsx}"],
-    plugins: { vitest },
     extends: [js.configs.recommended, react.configs.flat.recommended],
     languageOptions: {
       globals: {
@@ -42,7 +41,7 @@ export default defineConfig([
       },
     },
     rules: {
-      "react/react-in-jsx-scope": "off", // ⭐ fix
+      "react/react-in-jsx-scope": "off",
       "no-unused-vars": "off",
     },
   },
